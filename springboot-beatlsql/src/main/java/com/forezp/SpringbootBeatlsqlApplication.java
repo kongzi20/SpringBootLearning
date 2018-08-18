@@ -89,7 +89,7 @@ public class SpringbootBeatlsqlApplication {
 	//配置数据库
 	@Bean(name = "datasource")
 	public DataSource getDataSource() {
-		return DataSourceBuilder.create().url("jdbc:mysql://127.0.0.1:3306/test").username("root").password("123456").build();
+		return DataSourceBuilder.create().url("jdbc:mysql://127.0.0.1:3306/test01").username("debian-sys-maint").password("F4ciylXANwWT6VjY").build();
 	}
 
 	//开启事务

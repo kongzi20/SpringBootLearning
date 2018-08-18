@@ -31,14 +31,14 @@ public class AccountController {
     @RequestMapping(value = "/{id}",method = RequestMethod.PUT)
     public  String updateAccount(@PathVariable("id")int id , @RequestParam(value = "name",required = true)String name,
     @RequestParam(value = "money" ,required = true)double money){
-        Account account=new Account();
+        Account account = new Account();
         account.setMoney(money);
         account.setName(name);
         account.setId(id);
-        int t=accountService.update(account);
-        if(t==1){
+        int t = accountService.update(account);
+        if (t == 1) {
             return account.toString();
-        }else {
+        } else {
             return "fail";
         }
     }
