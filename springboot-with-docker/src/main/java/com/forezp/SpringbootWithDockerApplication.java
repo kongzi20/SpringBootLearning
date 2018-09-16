@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringbootWithDockerApplication {
 
-	@RequestMapping("/")
-	public String home() {
-		return "Hello Docker World";
-	}
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootWithDockerApplication.class, args);
-	}
+    @RequestMapping("/")
+    public String home() {
+        return "Hello Docker World";
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootWithDockerApplication.class, args);
+    }
 }
